@@ -1,5 +1,3 @@
-**nk-ntba library docs**
-
 Bot authorization:
 
 ```
