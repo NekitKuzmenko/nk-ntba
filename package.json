@@ -1,0 +1,11 @@
+{
+  "name": "nk-ntba",
+  "version": "2.1.2",
+  "description": "Telegram bot api library for NodeJS. Developer's telegram: @NekitKuzmenko",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NekitKuzmenko",
+  "license": "ISC"
+}
