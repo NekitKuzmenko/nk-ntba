@@ -115,3 +115,30 @@ await bot.downloadFile('your file_id', fs.createWriteStream('your file'));
 
 All other methods are async and need ```await``` or ```.then``` constructions (```.catch``` is not used, **promise is always resolved**).
 You can check available methods in source code of this library.
+
+Example of echo bot:
+
+```
+const Bot = require('nk-ntba');
+
+let bot = new Bot('API token of your bot');
+
+bot.setCallback('message.text', async (msg) => {
+
+    let cid = msg.chat.id;
+    let msgid = msg.message_id;
+    let tx = msg.text;
+
+    let r = await bot.sendMessage(cid, `You sent: ${tx}`);
+
+    setTimeout(() => {
+
+        bot.deleteMessage(cid, msgid);
+        bot.deleteMessage(cid, r.message_id);
+
+        bot.sendMessage(cid, `Messages were deleted after 5 sec`);
+
+    }, 5000);
+
+});
+```
