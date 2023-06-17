@@ -143,6 +143,6 @@ bot.setCallback('message.text', async (msg) => {
 });
 
 bot.listen({
-    lon_polling: 300
+    long_polling: 300
 });
 ```
