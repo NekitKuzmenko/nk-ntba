@@ -1,6 +1,6 @@
 **nk-ntba library docs**
 
-Bot authorizing:
+Bot authorization:
 
 ```
 const Bot = require('nk-ntba');
