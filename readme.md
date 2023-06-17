@@ -141,4 +141,8 @@ bot.setCallback('message.text', async (msg) => {
     }, 5000);
 
 });
+
+bot.listen({
+    lon_polling: 300
+});
 ```
