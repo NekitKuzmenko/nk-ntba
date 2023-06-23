@@ -15,7 +15,7 @@ Events for listening updates:
     inline_query
     chosen_inline_result
     callback_query
-    shipping_query'
+    shipping_query
     pre_checkout_query
     poll
     poll_answer
@@ -110,7 +110,11 @@ const Bot = require('nk-ntba');
 
 let bot = new Bot('API token of your bot');
 
-await bot.downloadFile('your file_id', fs.createWriteStream('your file'));
+(async () =>
+
+    await bot.downloadFile('your file_id', fs.createWriteStream('your file'));
+    
+})();
 ```
 
 All other methods are async and need ```await``` or ```.then``` constructions (```.catch``` is not used, **promise is always resolved**).
