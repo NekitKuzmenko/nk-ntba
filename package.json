@@ -1,6 +1,6 @@
 {
   "name": "nk-ntba",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Telegram bot api library for NodeJS. Developer's telegram: @NekitKuzmenko",
   "main": "index.js",
   "scripts": {

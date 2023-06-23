@@ -110,7 +110,7 @@ const Bot = require('nk-ntba');
 
 let bot = new Bot('API token of your bot');
 
-(async () =>
+(async () => {
 
     await bot.downloadFile('your file_id', fs.createWriteStream('your file'));
     
